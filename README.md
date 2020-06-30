@@ -1,99 +1,105 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+  <a href="//montero-design.com">
+    <img src="http://montero-design.com/am.svg" width="60" />
   </a>
 </p>
 <h1 align="center">
-  Gatsby's default starter
+  Alvaro Montero
 </h1>
-
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
-
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+<h3 align="center">
+  Creative Technologist
+</h3>
 
 ## 🚀 Quick start
+  ```shell
+  yarn
+  yarn develop
+  ```
 
-1.  **Create a Gatsby site.**
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+## :arrow_heading_down: Commiting Changes
 
-    ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+This repo enforce `conventional commit` [More info](https://github.com/conventional-changelog/commitlint)
 
-1.  **Start developing.**
+#### Types
 
-    Navigate into your new site’s directory and start it up.
+Must be one of the following:
 
-    ```shell
-    cd my-default-starter/
-    gatsby develop
-    ```
+**build**: Changes that affect the build system or external dependencies (example scopes: webpack, babel, npm)
 
-1.  **Open the source code and start editing!**
+**chore** Update tasks, no production code change (example scopes: build, lint, hooks)
 
-    Your site is now running at `http://localhost:8000`!
+**ci**: Changes to our CI configuration files and scripts (example scopes: Jenkins, Travis, Circle)
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+**docs**: Documentation only changes
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+**feat**: A new feature
 
-## 🧐 What's inside?
+**fix**: A bug fix
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+**perf**: A code change that improves performance
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+**refactor**: A code change that neither fixes a bug nor adds a feature
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+**style**: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+**test**: Adding missing tests or correcting existing tests
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+#### Commit message structure
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+```
+<type>(scope): <description>
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+[optional body]
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
+[optional footer]
+```
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+```
+// Simple Example
+feat(calendar): added multiyear props to component
+```
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+```
+// Extended Example
+feat(calendar): added multiyear props to component
 
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
+- Multiyear prop must be a number
+- Two theme styles
+- Unit tests and Snapshots
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+#closes 00
+```
 
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+---
 
-12. **`README.md`**: A text file containing useful reference information about your project.
+## :hibiscus: Code formatting & linting
 
-## 🎓 Learning Gatsby
+[Prettier](https://prettier.io/) for code formatting. Extension for VS Code can be found [here](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+Prettier configuration can be found in `.prettierrc.js`
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+[ESLint](https://eslint.org/) for code linting. Extension for VS Code can be found [here](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+ESLint configuration can be found in `.eslintrc.js`
 
-## 💫 Deploy
+Codebase linting and testing is done on pre-commit hook level.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+## :anger: Test
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-default)
+Project is using [JEST](https://jestjs.io/) for unit testing.
 
-<!-- AUTO-GENERATED-CONTENT:END -->
+#### Main commands
+
+```
+  $ yarn test // Run all tests
+  $ yarn test:update // Update Snapshots
+  $ yarn test:watch // Watch test for develop
+```
+
+#### Other commands
+
+```
+  $ yarn test:update // Update Snapshots
+  $ yarn test:watch // Watch test for develop
+```
