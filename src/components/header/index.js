@@ -1,22 +1,27 @@
 import React from 'react';
-import { graphql, useStaticQuery, Link } from 'gatsby';
+import { graphql, Link, useStaticQuery } from 'gatsby';
+import { Logo } from '../';
+import { theme } from '../../styles';
 
 const Header = () => {
   const data = useStaticQuery(graphql`
-    {
-      wordpressSiteMetadata {
-        name
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+        }
       }
     }
   `);
-  const {
-    wordpressSiteMetadata: { name },
-  } = data;
 
   return (
-    <h1>
-      <Link to="/">{name}</Link>
-    </h1>
+    <header style={{ backgroundColor: theme.palette.dark }}>
+      <h1>
+        <Link to="/" title={data.site.siteMetadata.title}>
+          <Logo width={80} />
+        </Link>
+      </h1>
+    </header>
   );
 };
 
