@@ -1,7 +1,5 @@
 import React from 'react';
-
-import * as Layouts from '../components/layouts';
-import HtmlHead from '../components/html-head';
+import { HtmlHead, Layouts } from '../components';
 
 const NotFoundPage = () => (
   <Layouts.Base>

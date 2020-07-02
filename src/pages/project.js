@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-
-import * as Layouts from '../components/layouts';
-import HtmlHead from '../components/html-head';
+import { HtmlHead, Layouts } from '../components';
 
 const Project = () => (
   <Layouts.Base>
