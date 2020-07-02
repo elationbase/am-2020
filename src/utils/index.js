@@ -1,4 +1,5 @@
-import createMarkup from './createMarkup';
 import commasToArray from './commasToArray';
+import createMarkup from './createMarkup';
+import i18n from './i18n';
 
-export { createMarkup, commasToArray };
+export { commasToArray, createMarkup, i18n };

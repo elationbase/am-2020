@@ -3,7 +3,7 @@ import { About, Footer, Header, Hero, HtmlHead, Introduction, Layouts, Projects,
 
 const IndexPage = () => (
   <Layouts.Base>
-    <HtmlHead title="hello!" />
+    <HtmlHead title="Alvaro Montero" />
     <Header />
     <Hero />
     <Introduction />

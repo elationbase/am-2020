@@ -1,65 +1,52 @@
 import React from 'react';
+import { i18n } from '../../utils';
+import translation from '../../utils/lang/en';
 
 const Introduction = () => (
   <section>
-    <h3>A Montero Portfolio App</h3>
+    <h3>{i18n.t('introduction.HEAD')}</h3>
     <div>
-      <p>
-        I have extensive experience building websites and applications for startups, digital agencies, and fortune 500
-        companies. My responsibilities included the design, front-end development and management always utilizing the
-        latest technologies and up-to-date standards.
-      </p>
-      <p>
-        I am passionately build powerful, efficient and reusable web components and I am committed to delivering
-        performant, usable and beautiful user interfaces. I not only love to build world class user experiences, but
-        also I play an active role in defining them.
-      </p>
-      <p>
-        With agile development methodology, I utilize time management and prioritize objectives to ensure quality
-        outcomes with a fast turnaround. I always pay detailed attention to design and development, with emphasis on
-        quality assurance in cross browser, cross platform and portable devices.
-      </p>
-      <p>
-        My varied experience in both the creative and technical aspects of web development allows me to build strong
-        relationships across departments both within the company and with outside organizations.
-      </p>
+      <p>{i18n.t('introduction.COPY1')}</p>
+      <p>{i18n.t('introduction.COPY2')}</p>
+      <p>{i18n.t('introduction.COPY3')}</p>
+      <p>{i18n.t('introduction.COPY4')}</p>
     </div>
 
     <ul>
       <li>
-        <p>Design</p>
+        <p>{i18n.t('introduction.DESIGN')}</p>
         <ul>
-          <li>Sketch</li>
-          <li>Illustrator</li>
-          <li>Photoshop</li>
-          <li>SVG</li>
+          <li>{i18n.t('introduction.SKETCH')}</li>
+          <li>{i18n.t('introduction.ILLUSTRATOR')}</li>
+          <li>{i18n.t('introduction.PHOTOSHOP')}</li>
+          <li>{i18n.t('introduction.SVG')}</li>
         </ul>
       </li>
       <li>
-        <p>Code</p>
+        <p>{i18n.t('introduction.CODE')}</p>
         <ul>
-          <li>JavaScript</li>
-          <li>JSON/REST</li>
-          <li>GraphQL</li>
-          <li>Sass/PostCSS/CSSinJS</li>
+          <li>{i18n.t('introduction.JS')}</li>
+          <li>{i18n.t('introduction.JSON')}</li>
+          <li>{i18n.t('introduction.GRAPHQL')}</li>
+          <li>{i18n.t('introduction.CSS')}</li>
         </ul>
       </li>
       <li>
-        <p>Open Source</p>
+        <p>{i18n.t('introduction.OPEN_SOURCE')}</p>
         <ul>
-          <li>React</li>
-          <li>React Native</li>
-          <li>VueJS</li>
-          <li>Redux</li>
+          <li>{i18n.t('introduction.REACT')}</li>
+          <li>{i18n.t('introduction.REACT_NATIVE')}</li>
+          <li>{i18n.t('introduction.VUEJS')}</li>
+          <li>{i18n.t('introduction.REDUX')}</li>
         </ul>
       </li>
       <li>
-        <p>Team</p>
+        <p>{i18n.t('introduction.TEAM')}</p>
         <ul>
-          <li>Git</li>
-          <li>Agile</li>
-          <li>Modular</li>
-          <li>Monitoring</li>
+          <li>{i18n.t('introduction.GIT')}</li>
+          <li>{i18n.t('introduction.AGILE')}</li>
+          <li>{i18n.t('introduction.MENTOR')}</li>
+          <li>{i18n.t('introduction.MONITORING')}</li>
         </ul>
       </li>
     </ul>
