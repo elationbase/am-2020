@@ -2,10 +2,10 @@ import React from 'react';
 import {
   Design,
   HtmlHead,
-  Introduction,
   Layouts,
   ProjectHeader,
   ProjectInformation,
+  ProjectIntroduction,
   ProjectStack,
   Screens,
 } from '../components';
@@ -26,7 +26,7 @@ const Page = ({ pageContext }) => {
           <ProjectInformation project={project} company={company} roles={role} dateReleased={date_released} />
         </article>
         <article>
-          <Introduction content={content} />
+          <ProjectIntroduction content={content} />
           <Design colorPalette={color_palette} typography={typography} />
           <ProjectStack stacks={stack} />
           <Screens images={screens} />
