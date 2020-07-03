@@ -1,9 +1,9 @@
 import React from 'react';
 import { i18n } from '../../utils';
-import translation from '../../utils/lang/en';
+import { OffsetSectionTag } from '../ui';
 
 const Introduction = () => (
-  <section>
+  <OffsetSectionTag theme="dark">
     <h3>{i18n.t('introduction.HEAD')}</h3>
     <div>
       <p>{i18n.t('introduction.COPY1')}</p>
@@ -50,7 +50,7 @@ const Introduction = () => (
         </ul>
       </li>
     </ul>
-  </section>
+  </OffsetSectionTag>
 );
 
 export default Introduction;

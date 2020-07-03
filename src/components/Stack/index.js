@@ -1,7 +1,8 @@
 import React from 'react';
+import { OffsetSectionTag } from '../ui';
 
 const Stack = () => (
-  <section>
+  <OffsetSectionTag theme="dark">
     <h3>Typical technology stack</h3>
     <ul>
       <li>JavaScript</li>
@@ -19,7 +20,7 @@ const Stack = () => (
       <li>Webpack</li>
       <li>Sentry</li>
     </ul>
-  </section>
+  </OffsetSectionTag>
 );
 
 export default Stack;

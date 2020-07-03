@@ -6,7 +6,7 @@ import footer from '../../components/Footer/en';
 
 export default {
   global: {
-    INDEX_TITLE: 'Alvao Montero',
+    INDEX_TITLE: 'Alvaro Montero',
   },
   hero: hero,
   introduction: introduction,
