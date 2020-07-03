@@ -1,13 +1,11 @@
 import React from 'react';
-import { OffsetSectionTag } from '../ui';
+import { i18n } from '../../utils';
+import { OffsetSectionTag, Type } from '../ui';
 
 const About = () => (
   <OffsetSectionTag>
-    <h3>What People Say About Me</h3>
-    <p>
-      Alvaro leverages his extensive domain knowledge to build confidence with stakeholders and effectively influence
-      their design decisions. I have no reservations with Alvaro leading stakeholder meetings or design discussions.
-    </p>
+    <Type tag="h2" theme="dark" text={i18n.t('about.HEAD')} />
+    <Type theme="dark" text={i18n.t('about.QUOTE1')} />
   </OffsetSectionTag>
 );
 

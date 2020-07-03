@@ -1,11 +1,11 @@
 const theme = {
   fontSize: {
-    xs: 10,
-    s: 14,
-    m: 16,
-    l: 20,
-    xl: 32,
-    xxl: 46,
+    xs: '10px',
+    s: '14px',
+    m: '16px',
+    l: '20px',
+    xl: '32px',
+    xxl: '46px',
   },
   fontWeight: {
     light: 200,
@@ -16,14 +16,17 @@ const theme = {
   palette: {
     dark: '#2b303b',
     light: '#F1F1F1',
+    soft: '#e9967a',
+    lightBlend: '#6e8390',
+    action: '#3595ac',
   },
   space: {
-    xs: 4,
-    s: 8,
-    m: 16,
-    l: 32,
-    xl: 64,
-    xxl: 128,
+    xs: '4px',
+    s: '8px',
+    m: '16px',
+    l: '32px',
+    xl: '64px',
+    xxl: '128px',
   },
 };
 
