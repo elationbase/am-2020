@@ -28,6 +28,14 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-react-axe',
+      options: {
+        showInProduction: false,
+        // axeOptions: {},
+        // axeContext: {},
+      },
+    },
+    {
       resolve: 'gatsby-source-wordpress',
       options: {
         /*
