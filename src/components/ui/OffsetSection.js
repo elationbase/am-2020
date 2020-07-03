@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import theme from '../../styles/theme';
+import colors from '../../styles/theme';
 
-const size = '60px';
+const size = '80px';
 
 const OffsetSectionTag = styled.section`
-  background-color: ${(props) => (props.theme === 'dark' ? theme.palette.dark : theme.palette.light)};
+  background-color: ${({ theme }) => (theme === 'dark' ? colors.palette.dark : colors.palette.light)};
   transform: skewY(-2deg) translateY(3rem);
   margin-top: ${`-${size}`};
   padding: ${size};
@@ -13,23 +13,17 @@ const OffsetSectionTag = styled.section`
 
 const OnsetSectionTag = styled.div`
   transform: skewY(2deg);
-  max-width: ${(props) => (props.full ? null : '800px')};
+  max-width: ${({ full }) => (full ? null : '800px')};
   margin: auto;
-  padding-bottom: ${(props) => (props.end ? null : size)};
+  padding-bottom: ${({ last }) => (last ? null : size)};
 `;
 
-const OffsetSection = ({ children, end, full, theme }) => (
+const OffsetSection = ({ children, last = false, full = false, theme = 'light' }) => (
   <OffsetSectionTag theme={theme}>
-    <OnsetSectionTag end={end} full={full}>
+    <OnsetSectionTag last={last} full={full}>
       {children}
     </OnsetSectionTag>
   </OffsetSectionTag>
 );
-
-OffsetSection.defaultProps = {
-  theme: 'light',
-  end: false,
-  full: false,
-};
 
 export default OffsetSection;

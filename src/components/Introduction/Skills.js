@@ -12,7 +12,7 @@ const MainUl = styled.ul`
 const MainLi = styled.li`
   flex: 1;
 `;
-const SubUl = styled.li`
+const SubUl = styled.ul`
   margin-top: ${theme.space.m};
 `;
 

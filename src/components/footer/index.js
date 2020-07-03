@@ -3,7 +3,7 @@ import { OffsetSectionTag } from '../ui';
 import { i18n } from '../../utils';
 
 const Footer = () => (
-  <OffsetSectionTag theme="dark" end>
+  <OffsetSectionTag theme="dark" last>
     <footer>
       <p>
         © {new Date().getFullYear()}, {i18n.t('footer.HEAD')}

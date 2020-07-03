@@ -4,6 +4,11 @@ import styled from 'styled-components';
 import { Logo } from '../';
 import { theme } from '../../styles';
 
+const HeaderTag = styled.header`
+  background-color: ${theme.palette.dark};
+  padding: ${theme.space.s} ${theme.space.l};
+`;
+
 const Header = () => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -14,10 +19,6 @@ const Header = () => {
       }
     }
   `);
-  const HeaderTag = styled.header`
-    background-color: ${theme.palette.dark};
-    padding: ${theme.space.s}px ${theme.space.l}px;
-  `;
 
   return (
     <HeaderTag>
